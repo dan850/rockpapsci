@@ -9,3 +9,11 @@
     background-color: rgb(39, 41, 68);
     font-family: sans-serif;
   }
+
+  .score {
+    color: rgb(224, 224, 224);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
