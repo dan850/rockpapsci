@@ -38,9 +38,16 @@ const game = () => {
           ///log choices
           console.log(computerChoice);
           ///
+
+
+//Update Images
+playerHand.src = `./assets/${this.textContent}.png`;
+computerHand.src = `./assets/${computerChoice}.png`;
+
 });
 });
   };
+
 
 
   const compareHands = (playerChoice, computerChoice) => {
