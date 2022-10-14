@@ -39,6 +39,7 @@ const game = () => {
           console.log(computerChoice);
           ///
 
+          compareHands(this.textContent, computerChoice);
 
 //Update Images
 playerHand.src = `./assets/${this.textContent}.png`;
@@ -48,6 +49,12 @@ computerHand.src = `./assets/${computerChoice}.png`;
 });
   };
 
+  const updateScore = () => {
+    const playerScore = document.querySelector(".player-score p");
+    const computerScore = document.querySelector(".computer-score p");
+    playerScore.textContent = pScore;
+    computerScore.textContent = cScore;
+  };
 
 
   const compareHands = (playerChoice, computerChoice) => {
