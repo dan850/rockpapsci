@@ -126,6 +126,9 @@ const game = () => {
     //Check for Scissors
     if (playerChoice === "scissors") {
       if (computerChoice === "rock") {
+
+        document.querySelector(".winner").style.color = "red";
+
         winner.textContent = "Computer Wins";
         cScore++;
         updateScore();
